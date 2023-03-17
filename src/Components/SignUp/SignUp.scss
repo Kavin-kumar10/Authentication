@@ -1,0 +1,82 @@
+.SignUp{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            max-width:70%;
+        }
+    }
+    .Contain{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:var(--tertiary-color-2);
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            h1{
+                font-size: 50px;
+                color:var(--primary-color);
+                margin: 0px;
+            }
+            p{
+                opacity: 0.4;
+                color: var(--secondary-color);
+                margin: 20px;
+            }
+            .elem{
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                padding: 12px;
+                label{
+                    padding: 12px 0px;
+                    font-size: 20px;
+                }
+                input{
+                    padding: 12px;
+                    width: 100%;
+                    border-radius: 12px;
+                    background-color: var(--primary-color);
+                    border: none;
+                    outline: none;
+                }
+            }
+            .btn{
+                display: flex;
+                justify-content: center;
+                width: 60%;
+                margin: 20px;
+                padding: 12px;
+                button{
+                    color: var(--secondary-color);
+                    background-color: var(--primary-color);
+                    width:100%;
+                    height: 40px;
+                    margin: 0px 10px 0px 0px;
+                    cursor: pointer;
+                    border-radius: 12px;
+                    border: none;
+                    &:hover{
+                        background-color: var(--secondary-color);
+                        color: var(--primary-color);
+                        transition:all 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+}
