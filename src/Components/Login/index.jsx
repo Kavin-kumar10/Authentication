@@ -34,7 +34,7 @@ const Login = () =>{
         );
         const userReq = Users.find((user)=>user.Email == User.Email && user.Password == User.Password);
         if(userReq){
-            Navigate("/Authentication/Home");
+            Navigate("/Home");
         }
         else{
             alert("Invalid Email or Password");
@@ -61,7 +61,7 @@ const Login = () =>{
                         <button type="submit">SUBMIT</button>
                         <button type="reset">RESET</button>
                     </div>
-                    <p style={{opacity:1,textDecoration:"none",margin:"0px"}}><Link to='/Authentication/SignUp'>Don't have an Account</Link></p>
+                    <p style={{opacity:1,textDecoration:"none",margin:"0px"}}><Link to='/SignUp'>Don't have an Account</Link></p>
                 </form>
             </div>
         </div>
