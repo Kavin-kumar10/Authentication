@@ -30,7 +30,7 @@ const SignUp = () =>{
         localStorage.setItem('user',JSON.stringify(Users));
         setUser({Username:'',Email:'',Password:''});
         console.log(Users);
-        Navigate('/Login');
+        Navigate('/Authentication/Login');
     }
 
 
@@ -56,7 +56,7 @@ const SignUp = () =>{
                         <button type="submit">SUBMIT</button>
                         <button type="reset">RESET</button>
                     </div>
-                    <p style={{opacity:1,textDecoration:"none",margin:"0px"}}><Link to='/Login'>Already have an Account</Link></p>
+                    <p style={{opacity:1,textDecoration:"none",margin:"0px"}}><Link to='/Authentication/Login'>Already have an Account</Link></p>
 
                 </form>
             </div>
