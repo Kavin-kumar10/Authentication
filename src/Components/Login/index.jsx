@@ -7,7 +7,7 @@ import { ListContext } from "../../Context";
 
 
 
-const Login = () =>{
+const Login = ({setAuthorized}) =>{
     const Navigate = useNavigate();
 
     //States from context
@@ -34,6 +34,7 @@ const Login = () =>{
         );
         const userReq = Users.find((user)=>user.Email == User.Email && user.Password == User.Password);
         if(userReq){
+            setAuthorized(true);
             Navigate("/Home");
         }
         else{

@@ -1,8 +1,12 @@
 import React from "react";
 import Confetti from "react-confetti";
+import { Navigate } from "react-router-dom";
 import "./Home.scss";
 
-const Home = () =>{
+const Home = ({Authorized}) =>{
+    if(!Authorized){
+        return <Navigate to="/Login"/>;
+    }
     return(
         <div className="Home">
             <Confetti/>
