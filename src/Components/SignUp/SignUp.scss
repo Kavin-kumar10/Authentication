@@ -80,3 +80,12 @@
         }
     }
 }
+
+@media screen and (max-width:800px){
+    .SignUp{
+        flex-direction: column;
+        .img{
+            display: none;
+        }
+    }
+}

@@ -14,3 +14,14 @@
         opacity: 0.5;
     }
 }
+
+
+@media screen and (max-width:800px){
+    .Home{
+        margin: 0px;
+        h1{
+            font-size: 20px;
+            margin: 5px;
+        }
+    }
+}
